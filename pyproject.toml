@@ -10,9 +10,13 @@ authors = ["Lukas Theurer lackeslab@gmail.com"]
 
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
 jupyterlab = "^4.0.5"
 plotly = "^5.16.1"
 pandas = "^2.1.0"
 aleph-alpha-client = "^3.4.1"
 darts = {extras = ["all"], version = "^0.30.0"}
+streamlit = "^1.38.0"
+haystack-ai = "^2.5.1"
+langchain = "^0.2.16"
+llama-index = "^0.11.8"
