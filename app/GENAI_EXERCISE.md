@@ -38,3 +38,18 @@ Eine Retrieving Pipeline könnte bestehen aus:
 - **Retriever**
 - **Prompt**
 - **Generator**
+
+
+## Aufgabe 5: Retrieval & Indexing Improvement
+- **Identifiziere Schwächen** Die Basis Rag Umsetzung aus Aufgabe 4 weist einige Schwächen auf. Identifiziere Frage & Antwort Paare. Jeweils 5 Beispiele die gut funktionieren und 5 die nicht gut funktionieren. Überlege dir, warum die Negativbeispiele nicht richtig funktionieren
+- **Verbessere die Leistung deiner RAG Applikation**: In der Vorlesung haben wir weitere potentielle RAG Verbesserungen eingeführt. Implementiere diese Verbesserungen und schau, ob sich die 5 Negativbeispiele zu Positivbeispielen wandeln. Eine gute Reihenfolge könnte sein:
+  - HybridSearch
+  - HyDE 
+  - Small-To-Big Chunking
+  - HyQE
+
+## Aufgabe 6: Tracing & Debugging
+**LangFuse** Starte mittels Docker eine LangFuse Instanz und binde deine RAG Applikation darin an. Achte bei der Umsetzung auf Folgendes:
+- Korrekte Darstellung der Pipeline / Chain Komponenten
+- Separation der einzelnen Chats in "Sessions"
+- Messung / Schätzung der Tokenanzahl
