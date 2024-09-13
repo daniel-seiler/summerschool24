@@ -2196,6 +2196,20 @@ openapi = ["openapi-core (>=0.18.0,<0.19.0)", "ruamel-yaml"]
 test = ["hatch", "ipykernel", "openapi-core (>=0.18.0,<0.19.0)", "openapi-spec-validator (>=0.6.0,<0.8.0)", "pytest (>=7.0,<8)", "pytest-console-scripts", "pytest-cov", "pytest-jupyter[server] (>=0.6.2)", "pytest-timeout", "requests-mock", "ruamel-yaml", "sphinxcontrib-spelling", "strict-rfc3339", "werkzeug"]
 
 [[package]]
+name = "jupyterlab-vim"
+version = "4.1.3"
+description = "Code cell vim bindings"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "jupyterlab_vim-4.1.3-py3-none-any.whl", hash = "sha256:a0c74c9697f42f42d030133f5b3aea092ef9c8dc7d8252afb91cdad951677131"},
+    {file = "jupyterlab_vim-4.1.3.tar.gz", hash = "sha256:57e1a0a4eddd2334e8d7a7c0df80f5097b78f5480ffa84307f2e508df98b6878"},
+]
+
+[package.dependencies]
+jupyterlab = ">=4.1.0,<5"
+
+[[package]]
 name = "kiwisolver"
 version = "1.4.7"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -3533,6 +3547,35 @@ files = [
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl", hash = "sha256:dc21cf308ca5691e7c04d962e213f8a4aa9bbfa23d95412f452254c2caeb09e5"},
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-win_amd64.whl", hash = "sha256:65f4d98982b31b60026e0e6de73fbdfc09d08a96f4656dd3665ca616a11e1e82"},
 ]
+
+[[package]]
+name = "ollama"
+version = "0.3.3"
+description = "The official Python client for Ollama."
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "ollama-0.3.3-py3-none-any.whl", hash = "sha256:ca6242ce78ab34758082b7392df3f9f6c2cb1d070a9dede1a4c545c929e16dba"},
+    {file = "ollama-0.3.3.tar.gz", hash = "sha256:f90a6d61803117f40b0e8ff17465cab5e1eb24758a473cfe8101aff38bc13b51"},
+]
+
+[package.dependencies]
+httpx = ">=0.27.0,<0.28.0"
+
+[[package]]
+name = "ollama-haystack"
+version = "1.0.0"
+description = "An integration between the Ollama LLM framework and Haystack"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "ollama_haystack-1.0.0-py3-none-any.whl", hash = "sha256:bd539218c753c8d672fbaba3343ae606edf4631caf951e46fd02a53db6fb2515"},
+    {file = "ollama_haystack-1.0.0.tar.gz", hash = "sha256:3414fc57d2f5a193b7527a73dacc940e76d110dcf78603fa54dbd402152d74fb"},
+]
+
+[package.dependencies]
+haystack-ai = "*"
+ollama = "*"
 
 [[package]]
 name = "openai"
@@ -5581,6 +5624,24 @@ files = [
 ]
 
 [[package]]
+name = "tika"
+version = "2.6.0"
+description = "Apache Tika Python library"
+optional = false
+python-versions = "*"
+files = [
+    {file = "tika-2.6.0.tar.gz", hash = "sha256:56670eb812944eb25ed73f1b3b075aa41e7a135b74b240822f28b819e5b373da"},
+]
+
+[package.dependencies]
+requests = "*"
+setuptools = "*"
+
+[package.extras]
+all = ["memory-profiler (>=0.57.0)", "memory-profiler (>=0.57.0)", "pytest-benchmark (>=3.2.2)", "pytest-benchmark (>=3.2.2)"]
+tests = ["memory-profiler (>=0.57.0)", "pytest-benchmark (>=3.2.2)"]
+
+[[package]]
 name = "tiktoken"
 version = "0.7.0"
 description = "tiktoken is a fast BPE tokeniser for use with OpenAI's models"
@@ -5959,11 +6020,6 @@ files = [
     {file = "triton-3.0.0-1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:34e509deb77f1c067d8640725ef00c5cbfcb2052a1a3cb6a6d343841f92624eb"},
     {file = "triton-3.0.0-1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:bcbf3b1c48af6a28011a5c40a5b3b9b5330530c3827716b5fbf6d7adcc1e53e9"},
     {file = "triton-3.0.0-1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:6e5727202f7078c56f91ff13ad0c1abab14a0e7f2c87e91b12b6f64f3e8ae609"},
-    {file = "triton-3.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:39b052da883351fdf6be3d93cedae6db3b8e3988d3b09ed221bccecfa9612230"},
-    {file = "triton-3.0.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cd34f19a8582af96e6291d4afce25dac08cb2a5d218c599163761e8e0827208e"},
-    {file = "triton-3.0.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0d5e10de8c011adeb7c878c6ce0dd6073b14367749e34467f1cff2bde1b78253"},
-    {file = "triton-3.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e8903767951bf86ec960b4fe4e21bc970055afc65e9d57e916d79ae3c93665e3"},
-    {file = "triton-3.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:41004fb1ae9a53fcb3e970745feb87f0e3c94c6ce1ba86e95fa3b8537894bef7"},
 ]
 
 [package.dependencies]
@@ -6434,4 +6490,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-content-hash = "d8f3481d2909628f77bbe2030bf2bf0ed1cc526257ba604fe3cf5acfcd5a7fbc"
+content-hash = "5dc2882b022a2edd5bcf674e6fc0052f2f15e07ad1bbc80c7ce06f0f8eb3e506"

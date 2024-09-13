@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 name = "SummerschoolHKA"
 version = "0.1.0"
 description = "Your project description"
-authors = ["Lukas Theurer lackeslab@gmail.com"]
+authors = ["Lukas Theurer <lackeslab@gmail.com>"]
 
 
 [tool.poetry.dependencies]
@@ -20,3 +20,6 @@ streamlit = "^1.38.0"
 haystack-ai = "^2.5.1"
 langchain = "^0.2.16"
 llama-index = "^0.11.8"
+jupyterlab-vim = "^4.1.3"
+ollama-haystack = "^1.0.0"
+tika = "^2.6.0"
